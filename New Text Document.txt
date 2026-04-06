@@ -1,0 +1,16 @@
+git init = creer repository
+git status = voir l etat des fichier 
+
+git add "generation du dataset "  nom de fichier
+git add .
+
+git config --global user.name  "Wafa"
+git config --global user.email "chaourwafa@gmail.com"
+
+git commit -m "first commit"
+pour ajouter au github 
+
+1- creer repository github
+2-copier link(https://github.com/chaourwafa/tpRic.git)
+3- git remote add origin 
+https://github.com/chaourwafa/tpRic.git
