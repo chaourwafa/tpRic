@@ -12,5 +12,7 @@ pour ajouter au github
 
 1- creer repository github
 2-copier link(https://github.com/chaourwafa/tpRic.git)
-3- git remote add origin 
-https://github.com/chaourwafa/tpRic.git
+3- git remote add origin https://github.com/chaourwafa/tpRic.git
+git add .
+git commit -m "update"
+git push
