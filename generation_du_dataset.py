@@ -13,7 +13,7 @@ X = np.random.uniform(-5, 5, (N, 2))
 def f(x,y) :
     return np.sin(np.sqrt(x**2 + y**2)) + 0.5* np.cos(2*x +2*y)
  
-z= f(X[:,0] , X[:,0])  
+z= f(X[:,0] , X[:,1])  
 
 z=z.reshape(2000 , 1)
 
@@ -21,17 +21,17 @@ z=z.reshape(2000 , 1)
 
 mean =np.mean(X , axis=0 )
 std =np.std(X,axis=0)
-norm = (X - mean)/std
+norm = (X - mean) / std
 
 # normalisation  des z:
 
 mean2 =np.mean(z)
-std2 =np.std(z,axis=0)
-norm2 = (z - mean)/std
+std2 =np.std(z)
+norm2 = (z - mean2) / std2
 
 #visulisation 
 
 fig =plt.figure()
-ax= fig.add_subplot(111,projection='3d')
-ax.scatter(X[:,0], X[:,1], z, s=0.2)
-plt.savefig("plot.png")
+ax= fig.add_subplot(111 , projection='3d')
+ax.scatter(norm[:,0], norm[:,1], norm2, s=0.1)
+plt.savefig("plot3.png")
